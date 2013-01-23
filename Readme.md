@@ -10,6 +10,8 @@ var hook = Hook('/deploy')
   .auth('matt', 'test')
   .branch('master')
   .exec('./deploy');
+
+app.use(hook)
 ```
 
 ## Install
@@ -20,7 +22,7 @@ var hook = Hook('/deploy')
 
 ## Hook(url)
 
-  Initialize a new `Hook` with an optional base `url`. Defaults to `/`
+  Initialize a new `hook` with an optional base `url`. Defaults to `/`
 
 ## hook.base(url:String)
 
