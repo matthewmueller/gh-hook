@@ -18,11 +18,6 @@ var hook = Hook('/deploy')
 
 ## API
 
-  - [exports.base()](#exportsbaseurlstring)
-  - [exports.auth()](#exportsauthusernamestringpasswordstring)
-  - [exports.exec()](#exportsexeccommandstring)
-  - [exports.branch()](#exportsbranchbranchstring)
-
 ## Hook(url)
 
   Initialize a new `Hook` with an optional base `url`. Defaults to `/`
