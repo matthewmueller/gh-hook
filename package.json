@@ -1,0 +1,15 @@
+{
+  "name": "gh-hook",
+  "version": "0.0.1",
+  "description": "respond to github post-recieve hooks",
+  "keywords": [],
+  "author": "matthew mueller <mattmuelle@gmail.com>",
+  "dependencies": {
+    "express": "~3.0.6"
+  },
+  "devDependencies": {
+    "superagent" : "*",
+    "mocha": "*"
+  },
+  "main": "index"
+}
