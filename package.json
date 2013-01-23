@@ -5,10 +5,10 @@
   "keywords": [],
   "author": "matthew mueller <mattmuelle@gmail.com>",
   "dependencies": {
-    "express": "~3.0.6"
+    "connect": "~2.7.2"
   },
   "devDependencies": {
-    "superagent" : "*",
+    "superagent": "*",
     "mocha": "*"
   },
   "main": "index"
