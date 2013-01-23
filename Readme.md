@@ -1,9 +1,50 @@
 
 # gh-hook
 
-  respond to github post-recieve hooks
+  respond to [github post-recieve hooks](https://help.github.com/articles/post-receive-hooks).
 
-## License 
+## Example
+
+```js
+var hook = Hook('/deploy')
+  .auth('matt', 'test')
+  .branch('master')
+  .exec('./deploy');
+```
+
+## Install
+
+    npm install gh-hook
+
+## API
+
+  - [exports.base()](#exportsbaseurlstring)
+  - [exports.auth()](#exportsauthusernamestringpasswordstring)
+  - [exports.exec()](#exportsexeccommandstring)
+  - [exports.branch()](#exportsbranchbranchstring)
+
+## Hook(url)
+
+  Initialize a new `Hook` with an optional base `url`. Defaults to `/`
+
+## hook.base(url:String)
+
+  Specify a base `url`. Alias for `Hook(url)`.
+
+## hook.auth(username:String, password:String)
+
+  Authenticate using basic auth
+
+## hook.exec(command:String)
+
+  Execute a command
+
+## hook.branch(branch:String)
+
+  Specify a `branch` to respond to. Defaults to `master`;
+
+
+## License
 
 (The MIT License)
 
