@@ -1,6 +1,6 @@
 {
   "name": "gh-hook",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "respond to github post-recieve hooks",
   "keywords": [],
   "author": "matthew mueller <mattmuelle@gmail.com>",
