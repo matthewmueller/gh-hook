@@ -13,7 +13,9 @@ var Hook = require('../'),
 var hook = Hook('/deploy')
   .auth('matt', 'test')
   .branch('master')
-  .exec('echo `pwd`');
+  .deploy(function(body) {
+    console.log(body);
+  });
 
 /**
  * Listen

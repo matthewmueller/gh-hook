@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "superagent": "*",
+    "express" : "*",
     "mocha": "*"
   },
   "main": "index"
