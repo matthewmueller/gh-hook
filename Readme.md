@@ -9,7 +9,9 @@
 var hook = Hook('/deploy')
   .auth('matt', 'test')
   .branch('master')
-  .exec('./deploy');
+  .deploy(function(body) {
+
+  });
 
 app.use(hook)
 ```
@@ -32,14 +34,14 @@ app.use(hook)
 
   Authenticate using basic auth
 
-## hook.exec(command:String)
-
-  Execute a command
-
 ## hook.branch(branch:String)
 
   Specify a `branch` to respond to. Defaults to `master`;
 
+## hook.deploy(fn:Function)
+
+  Execute a callback function when you github posts to the given base `url` and
+  branch and auth conditions are satisfied.
 
 ## License
 
