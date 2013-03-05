@@ -43,6 +43,14 @@ app.use(hook)
   Execute a callback function when you github posts to the given base `url` and
   branch and auth conditions are satisfied.
 
+  The callback `fn` passes the raw github post body as the first argument:
+
+```js
+.deploy(function(ghbody) {
+  // do stuff
+})
+```
+
 ## License
 
 (The MIT License)
